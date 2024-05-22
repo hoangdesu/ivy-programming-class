@@ -1,0 +1,58 @@
+DATASET 1
+FoodLoss:
+
+The dataset is based on data and information gathered from openly accessible databases, reports and studies measuring food loss and waste.
+
+The fields are outlined below:
+
+m49code:
+UN M49 standard is a coding system developed by the United Nations for the representation of areas, countries, and regions for statistical purposes. It classifies geographical locations based on a set of unique three-digit codes
+
+country:
+name of each country
+
+region:
+name of each region within a country (eg state, province, district etc)
+
+cpc_code:
+The Central Product Classification (CPC) code constitutes a complete product classification covering all goods and services - in our dataset we are only interested Section 0 and 2 which covers (0) Agriculture, forestry and fishery products, and (2) Food products
+We specifically use the subclass, but each code is made up of a Group, Class and Subclass
+More details can be found at the end of the document.
+
+commodity:
+The descriptor of the product the waste/loss statistic relates to
+
+year:
+the year that the waste/loss statistic occurred (1966 – 2022)
+
+loss_percentage:
+The aggregated (avg) loss for the commodity
+
+activity:
+the activity that was being performed when the food loss/waste occurred
+eg Storage, Harvesting, Transportation, Consumption etc
+
+food_supply_stage:
+the food supply stage that the food was in when the loss/waste occurred
+eg Farm, Harvest, Retail, Wholesale, Households
+
+cause_of_loss:
+what cause the loss to occur
+eg Rodents/Pests (ie eating/contaminating the food), Decay, Mold, Over ripening, Spillage etc
+
+DATASET 2:
+CPC:
+
+The Central Product Classification (CPC) code constitutes a complete product classification covering all goods and services - in our dataset we are only interested Section 0 and 2 which covers (0) Agriculture, forestry and fishery products, and (2) Food products
+We specifically use the subclass, but each code is made up of a Section, Division, Group, Class, Subclass and specific Subclass.
+
+each code is made up of a 5 digit number, an optional decimal point, followed by 2 optional digits
+
+For example:
+Ocra has the code: 01239.01
+    0----.-- represents the Section: Agriculture, forestry and fishery products
+    01---.-- represents the Division: Products of agriculture, horticulture and market gardening
+    012--.-- represents the Group: Vegetables
+    0123-.-- represents the Class: Fruit-bearing vegetables
+    01239.-- represents the Sub-class: Other fruit-bearing vegetables
+    01239.01 represents the more specific Sub-class: Okra
