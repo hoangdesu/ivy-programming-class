@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// class name must be the same as file name.java
 public class Hello {
     public static void main(String[] args) {
         // System.out.println("Hello Java");
